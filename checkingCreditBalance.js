@@ -8,8 +8,7 @@ const getCreditBalance = async () => {
         const response = await fetch(url, {
             method: 'GET',
             headers: {
-                'X-Picsart-API-Key': `Bearer ${apiKey}`,
-                'X-Picsart-Plugin': 'Sketch'
+                'X-Picsart-API-Key': `${apiKey}`,
             }
         });
         if (!response.ok) {
